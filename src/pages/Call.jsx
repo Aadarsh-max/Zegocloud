@@ -43,11 +43,13 @@ export default function Call() {
 
   return (
     <div
-      className={`w-full min-h-screen flex flex-col items-center justify-center transition-colors duration-500 overflow-hidden ${
-        theme === "dark"
-          ? "bg-linear-to-br from-gray-900 via-purple-900 to-gray-900 text-white"
-          : "bg-linear-to-br from-violet-50 via-purple-50 to-pink-50 text-gray-900"
-      }`}
+      className={`w-full min-h-screen flex flex-col items-center justify-center transition-colors duration-500 overflow-hidden 
+    pt-20 sm:pt-24 md:pt-28
+    ${
+      theme === "dark"
+        ? "bg-linear-to-br from-gray-900 via-purple-900 to-gray-900 text-white"
+        : "bg-linear-to-br from-violet-50 via-purple-50 to-pink-50 text-gray-900"
+    }`}
     >
       <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-25 sm:opacity-10">
         <div

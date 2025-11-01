@@ -9,6 +9,7 @@ import {
   FaHeadset,
   FaCode,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const { theme } = useTheme();
@@ -169,6 +170,7 @@ const About = () => {
           to accelerate development and enhance user experience.
         </motion.p>
 
+        <Link to='https://www.zegocloud.com'>
         <motion.button
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -177,12 +179,13 @@ const About = () => {
           whileTap={{ scale: 0.95 }}
           className={`cursor-pointer mb-16 px-8 py-4 rounded-full font-semibold text-white shadow-lg transition-all duration-300 bg-linear-to-r from-violet-600 via-fuchsia-600 to-pink-600 hover:shadow-2xl ${
             theme === "dark"
-              ? "hover:shadow-violet-500/50"
-              : "hover:shadow-violet-400/50"
-          }`}
-        >
+            ? "hover:shadow-violet-500/50"
+            : "hover:shadow-violet-400/50"
+            }`}
+            >
           Get Started with ZegoCloud
         </motion.button>
+          </Link>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl w-full">
           {features.map((item, index) => (
